@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css?family=Shrikhand');
+
+$primary: green;
+$secondary: pink;
+$grey: grey;
+$white: white;
+$shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+$font-roboto: "Roboto", sans-serif;
+$dark-grey-bg: #353535;
+$gradient-purple: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+@mixin text-center {
+  text-align: center;
+}
+
+@mixin text-left {
+  text-align: left;
+}
+
+@mixin box-shadow {
+  box-shadow: $shadow;
+}
+
+@mixin btn-styles($background-color, $color) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  padding: 15px;
+  border: none;
+  background: $background-color;
+  color: $color;
+}
+
+@mixin card-styles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #F8F9FA;
+  border-radius: 10px;
+  @include box-shadow;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  font-family: $font-roboto;
+  padding-left: 20px;
+  padding-top: 60px;
+}
+
+.like-container {
+  position: relative;
+  width: 24px; /* largeur de l'icône */
+  height: 24px; /* hauteur de l'icône */
+}
+
+.heart-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* pour que les images soient de la même taille */
+  height: 100%;
+}
+
+.white-heart {
+  z-index: 2; /* au-dessus */
+}
+
+.purple-heart {
+  z-index: 1; /* en-dessous */
+}
+
+
+.plate-name {
+  font-family: $font-roboto;
+  text-align: left;
+}
+
+.text {
+  font-family: $font-roboto !important;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+
+  &-gap {
+    gap: 20px;
+    margin-left: 30px;
+  }
+
+  &-bold {
+    font-weight: bold;
+  }
+
+  &-white {
+    color: white;
+  }
+
+  &-leftAligned {
+    @include text-left;
+  }
+
+  &-margin {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  &-padding {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  &-rightAligned {
+    text-align: right;
+  }
+
+  &-center {
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.white-logo{
+  color: white;
+  padding-bottom: 10px;
+}
+
+.text-left {
+  @include text-left;
+
+}
+
+.top-border-radius {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+nav {
+  width: 100%;
+  background-color: white;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include box-shadow;
+  padding-top: 10px;
+
+  img {
+    text-align: center;
+    width: 200px;
+  }
+}
+
+.bg-image {
+  width: 100%;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: #EAEAEA;
+  @include box-shadow;
+  height: 50px;
+  gap: 17px;
+}
+
+.explorer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-round {
+  border-radius: 50px;
+}
+
+.btn-color {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  border: none;
+}
+
+.degrade-color {
+  color: $gradient-purple;
+  border: none;
+}
+
+.align-item-left {
+  align-items: end;
+}
+
+.card-menu {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #F8F9FA;
+  // border-top-left-radius: 10px;
+  // border-top-right-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+
+  h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+  }
+
+  p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .plate-photo {
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .plate-text-like {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plate-text{
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.label-new {
+    font-family: $font-roboto;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color:#99E2D0;
+    color: #008766;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 10;
+  }
+}
+
+.btn-wide {
+  width: 235px;
+}
+
+.fonctionnement-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8F9FA;
+  border-radius: 10px;
+  @include box-shadow;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.restaurants {
+  background-color: #F8F9FA;
+}
+
+.restaurant-name {
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 40.82px;
+  text-align: left;
+}
+
+.plate-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8F9FA;
+  border-radius: 10px;
+  @include box-shadow;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.fonctionnement-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.number {
+  font-family: $font-roboto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #9356DC;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-left: -71px;
+  margin-right: 20px;
+}
+
+.like-container {
+  position: relative;
+  width: 24px; /* largeur de l'icône */
+  height: 24px; /* hauteur de l'icône */
+}
+
+
+
+.footer-bg {
+  display: flex;
+  background-color: $dark-grey-bg;
+  width: 100%;
+  height: 63px;
+  align-items: flex-start;
+}
+
+.test {
+  margin-left: 20px;
+}
+
+.footer-bg {
+  background-color: $dark-grey-bg;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  padding-left: 20px;
+  color: $white;
+  text-align: left !important;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-bg p,
+.footer-bg img,
+.footer-bg i {
+  margin: 0;
+}
+
+.footer-bg img {
+  width: 150px;
+}
+
+.footer-bg i {
+  font-size: 18px;
+}
+
+.icon-plus-text {
+  display:flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.footer-text {
+padding-left: 20px;
+}
