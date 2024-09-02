@@ -59,8 +59,25 @@ body {
 
 h2 {
   font-family: $font-roboto;
+}
+
+.restaurants-container {
   padding-left: 20px;
+  padding-right: 20px;
   padding-top: 60px;
+}
+
+.restaurants {
+  background-color: #F8F9FA;
+}
+
+.restaurant-name {
+  font-family: Shrikhand;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 40.82px;
+  text-align: left;
 }
 
 .like-container {
@@ -207,8 +224,9 @@ nav {
 }
 
 .card-menu {
-  padding-left: 10px;
-  padding-right: 10px;
+  border-radius: 10px;
+  // padding-left: 10px;
+  // padding-right: 10px;
   background-color: #F8F9FA;
   // border-top-left-radius: 10px;
   // border-top-right-radius: 10px;
@@ -233,8 +251,8 @@ nav {
     max-height: 100%;
     object-fit: cover;
     height: 180px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    // border-top-left-radius: 10px;
+    // border-top-right-radius: 10px;
   }
 
   .plate-text-like {
@@ -282,18 +300,7 @@ nav {
   margin-right: 20px;
 }
 
-.restaurants {
-  background-color: #F8F9FA;
-}
 
-.restaurant-name {
-  font-family: Shrikhand;
-  font-size: 28px;
-  font-style: italic;
-  font-weight: 400;
-  line-height: 40.82px;
-  text-align: left;
-}
 
 .plate-card {
   position: relative;
@@ -311,10 +318,11 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .number {
+  position: absolute;
   font-family: $font-roboto;
   display: flex;
   align-items: center;
@@ -324,8 +332,8 @@ nav {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  margin-left: -71px;
-  margin-right: 20px;
+  margin-left: -359px;
+  // margin-right: 20px;
 }
 
 .like-container {
@@ -383,4 +391,11 @@ nav {
 
 .footer-text {
 padding-left: 20px;
+}
+
+// Pages restaurants
+
+.restaurant-header {
+  display: flex;
+  justify-content: space-between;
 }
