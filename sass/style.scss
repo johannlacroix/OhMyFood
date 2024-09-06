@@ -306,6 +306,7 @@ nav {
   @include box-shadow;
   margin-bottom: 20px;
   margin-right: 20px;
+  padding: 0px 30px;
 }
 
 
@@ -330,10 +331,6 @@ nav {
 padding-left: 10px;
 }
 
-.picto {
-  width:12px;
-}
-
 .number {
   position: absolute;
   font-family: $font-roboto;
@@ -349,13 +346,25 @@ padding-left: 10px;
   // margin-left: -359px;
 }
 
-.like-container {
-  position: relative;
-  width: 24px; /* largeur de l'icône */
-  height: 24px; /* hauteur de l'icône */
+.picto {
+  display: flex;
+  position: absolute;
+  width:12px;
+  left: 30px;
 }
 
+.fonctionnement-card-text {
+  font-family: $font-roboto;
+  font-style: bold;
+  text-align: left;
+  margin-left: 30px;
+}
 
+.like-container {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
 
 .footer-bg {
   display: flex;

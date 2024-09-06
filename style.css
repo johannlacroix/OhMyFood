@@ -230,6 +230,7 @@ nav img {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin-bottom: 20px;
   margin-right: 20px;
+  padding: 0px 30px;
 }
 
 .plate-card {
@@ -251,10 +252,6 @@ nav img {
   padding-left: 10px;
 }
 
-.picto {
-  width: 12px;
-}
-
 .number {
   position: absolute;
   font-family: "Roboto", sans-serif;
@@ -269,10 +266,24 @@ nav img {
   left: -12px;
 }
 
+.picto {
+  display: flex;
+  position: absolute;
+  width: 12px;
+  left: 30px;
+}
+
+.fonctionnement-card-text {
+  font-family: "Roboto", sans-serif;
+  font-style: bold;
+  text-align: left;
+  margin-left: 30px;
+}
+
 .like-container {
   position: relative;
-  width: 24px; /* largeur de l'icône */
-  height: 24px; /* hauteur de l'icône */
+  width: 24px;
+  height: 24px;
 }
 
 .footer-bg {
