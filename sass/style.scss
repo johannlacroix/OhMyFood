@@ -327,7 +327,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+padding-left: 10px;
 }
 
 .picto {
@@ -345,8 +345,8 @@ nav {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  margin-left: -359px;
-  // margin-right: 20px;
+  left: -12px;
+  // margin-left: -359px;
 }
 
 .like-container {
