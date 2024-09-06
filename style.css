@@ -28,8 +28,7 @@ h2 {
 
 .restaurant-name {
   font-family: Shrikhand;
-  font-size: 28px;
-  font-style: italic;
+  font-size: 35px;
   font-weight: 400;
   line-height: 40.82px;
   text-align: left;
@@ -60,6 +59,7 @@ h2 {
 .plate-name {
   font-family: "Roboto", sans-serif;
   text-align: left;
+  padding-left: 5px;
 }
 
 .text {
@@ -233,14 +233,14 @@ nav img {
 }
 
 .plate-card {
-  position: relative;
   display: flex;
-  align-items: center;
+  width: 349px;
+  height: 69px;
   justify-content: center;
   background-color: #F8F9FA;
-  border-radius: 10px;
+  border-radius: 15.04px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-right: 20px;
 }
 
@@ -249,6 +249,10 @@ nav img {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+}
+
+.picto {
+  width: 12px;
 }
 
 .number {
@@ -320,9 +324,61 @@ nav img {
   padding-left: 20px;
 }
 
-.restaurant-header {
+.general-container {
+  background-color: #F6F6F6;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  padding: 30px;
+  margin-top: -30px;
+}
+
+.entree-plat-dessert {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.entree-plat-dessert-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title-menu-section {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 18.75px;
+  text-align: left;
+}
+
+.restaurant-name-bloc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.soustexteAndPrice {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+}
+
+.line-2 {
+  width: 40px;
+  height: 0px;
+  top: 27px;
+  gap: 0px;
+  border: 3px 0px 0px 0px;
+  opacity: 0px;
+  border: 3px solid #99E2D0;
+}
+
+.plate-and-price {
+  width: Fill 349px px;
+  height: Hug 72px px;
+  padding: 15px 0px 0px 0px;
+  gap: 5px;
+  opacity: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
