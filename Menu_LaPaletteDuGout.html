@@ -38,35 +38,25 @@
             src="./assets\Images et textes Ohmyfood\images\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg"
             alt="Image de fond : plat sur une table de restaurant" />
         <div class="general-container">
-
-            <section class="menu-container">
-                <div class="restaurant-name-bloc">
-                    <h2 class="restaurant-name">La Palette Du Goût</h2>
-                    <i class="fa-solid fa-heart"></i>
+            <div class="restaurant-name-container">
+                <p class="restaurant-name">La Palette Du Goût</p>
+                <div class="like-restaurant-container" onclick="toggleLike(this)">
+                    <img src="assets/Images et textes Ohmyfood/white-heart.svg" class="heart-icon white-heart">
+                    <img src="assets/Images et textes Ohmyfood/purple-heart.svg" class="heart-icon purple-heart hidden">
                 </div>
-                <section>
-                    <div class="entree-plat-dessert">
-                        <div class="entree-plat-dessert-section">
-                            <div class="card-title-menu-section">ENTREES</div>
-                            <div class="line-2"></div>
-                            <div class="plate-card">
-                                <div class="plate-name">
-                                    <h3 class="text text-bold">Fricassée d'escargots</h3>
-                                </div>
-                                <div class="plate-and-price">
-                                    <p class="text text-left">Au piment d'Espelette</p>
-                                    <p>25€</p>
-                                </div>
-                            </div>
-                        </div>
+            </div>
 
 
-
+            <div class="card-title-menu-section">ENTREES</div>
+            <div class="line-2"></div>
+            <div class="card-menu">
+                <div class="plate-text-like">
+                    <div class="plate-text">
+                        <h3 class="text text-bold">La Palette Du Goût</h3>
+                        <p class="text text-left">Ménilmontant</p>
                     </div>
-        </div>
-        </section>
-
-        </section>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -82,6 +72,7 @@
         </p>
 
     </footer>
+    <script src="toggleLike.js"></script>
 </body>
 
 </html>

@@ -26,20 +26,33 @@ h2 {
   background-color: #F8F9FA;
 }
 
+.restaurant-name-container {
+  display: flex;
+  align-items: center; /* Centre verticalement le texte et le cœur */
+  gap: 10px; /* Espace entre le texte et le cœur */
+}
+
 .restaurant-name {
   font-family: Shrikhand;
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 400;
   line-height: 40.82px;
   text-align: left;
+  margin-right: 10px; /* Espace entre le texte et le cœur */
+}
+
+.like-restaurant-container {
+  display: flex;
+  align-items: center; /* Aligne verticalement les icônes du cœur */
+  justify-content: center; /* Centre horizontalement les icônes du cœur */
+  width: 24px; /* Largeur du conteneur du cœur */
+  height: 24px; /* Hauteur du conteneur du cœur */
+  cursor: pointer; /* Ajoute un curseur de pointeur pour le clic */
 }
 
 .heart-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; /* pour que les images soient de la même taille */
-  height: 100%;
+  width: 24px; /* Largeur des icônes du cœur */
+  height: 24px; /* Hauteur des icônes du cœur */
 }
 
 .white-heart {
@@ -48,12 +61,6 @@ h2 {
 
 .purple-heart {
   z-index: 1; /* en-dessous */
-}
-
-.plate-name {
-  font-family: "Roboto", sans-serif;
-  text-align: left;
-  padding-left: 5px;
 }
 
 .text {
@@ -397,23 +404,12 @@ img {
   gap: 20px;
 }
 
-.entree-plat-dessert-section {
-  display: flex;
-  flex-direction: column;
-}
-
 .card-title-menu-section {
   font-family: Roboto;
   font-size: 16px;
   font-weight: 300;
   line-height: 18.75px;
   text-align: left;
-}
-
-.restaurant-name-bloc {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .soustexteAndPrice {
@@ -430,14 +426,6 @@ img {
   border: 3px 0px 0px 0px;
   opacity: 0px;
   border: 3px solid #99E2D0;
-}
-
-.plate-and-price {
-  width: Fill 349px px;
-  height: Hug 72px px;
-  padding: 15px 0px 0px 0px;
-  gap: 5px;
-  opacity: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
