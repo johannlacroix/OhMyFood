@@ -175,15 +175,40 @@ nav {
   height: 63px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  position: relative;
   @include box-shadow;
   padding-top: 10px;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Ajustez la largeur maximale si nécessaire */
+  margin: 0 auto; /* Centre le conteneur horizontalement */
+  position: relative; /* Pour permettre à la flèche de se positionner absolument */
+}
+
+.icon-goback {
+  position: absolute;
+  left: 20px; /* Ajustez la distance depuis le bord gauche */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1; /* Assurez-vous que la flèche est au-dessus de tout autre contenu */
+}
+
+nav img {
+  display: block; /* Assurez-vous que l'image n'a pas d'espacement indésirable */
+  width: 200px;
+  margin: 0 auto; /* Centre le logo horizontalement dans le conteneur */
+}
+
 
   img {
     text-align: center;
     width: 200px;
   }
-}
 
 .bg-image {
   width: 100%;
