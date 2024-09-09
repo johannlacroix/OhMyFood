@@ -84,9 +84,7 @@ h2 {
 }
 
 .like-container {
-  position: relative;
-  width: 24px; /* largeur de l'icône */
-  height: 24px; /* hauteur de l'icône */
+
 }
 
 .heart-icon {
@@ -382,6 +380,20 @@ padding-left: 10px;
   position: relative;
   width: 24px;
   height: 24px;
+  position: relative;
+  width: 24px; /* largeur de l'icône */
+  height: 24px; /* hauteur de l'icône */
+}
+.hidden {
+  display: none;
+}
+
+.like-container .white-heart {
+  z-index: 2; /* au-dessus */
+}
+
+.like-container .purple-heart {
+  z-index: 1; /* en-dessous */
 }
 
 .footer-bg {
