@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Shrikhand");
 body {
   padding: 0;
@@ -26,8 +25,8 @@ h2 {
 
 .restaurant-name-container {
   display: flex;
-  align-items: center; /* Centre verticalement le texte et le cœur */
-  gap: 10px; /* Espace entre le texte et le cœur */
+  align-items: center;
+  gap: 10px;
 }
 
 .restaurant-name {
@@ -36,29 +35,29 @@ h2 {
   font-weight: 400;
   line-height: 40.82px;
   text-align: left;
-  margin-right: 10px; /* Espace entre le texte et le cœur */
+  margin-right: 10px;
 }
 
 .like-restaurant-container {
   display: flex;
-  align-items: center; /* Aligne verticalement les icônes du cœur */
-  justify-content: center; /* Centre horizontalement les icônes du cœur */
-  width: 24px; /* Largeur du conteneur du cœur */
-  height: 24px; /* Hauteur du conteneur du cœur */
-  cursor: pointer; /* Ajoute un curseur de pointeur pour le clic */
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
 
 .heart-icon {
-  width: 24px; /* Largeur des icônes du cœur */
-  height: 24px; /* Hauteur des icônes du cœur */
+  width: 24px;
+  height: 24px;
 }
 
 .white-heart {
-  z-index: 2; /* au-dessus */
+  z-index: 2;
 }
 
 .purple-heart {
-  z-index: 1; /* en-dessous */
+  z-index: 1;
 }
 
 .text {
@@ -125,24 +124,24 @@ nav {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1200px; /* Ajustez la largeur maximale si nécessaire */
-  margin: 0 auto; /* Centre le conteneur horizontalement */
-  position: relative; /* Pour permettre à la flèche de se positionner absolument */
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .icon-goback {
   position: absolute;
-  left: 20px; /* Ajustez la distance depuis le bord gauche */
+  left: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1; /* Assurez-vous que la flèche est au-dessus de tout autre contenu */
+  z-index: 1;
 }
 
 nav img {
-  display: block; /* Assurez-vous que l'image n'a pas d'espacement indésirable */
+  display: block;
   width: 200px;
-  margin: 0 auto; /* Centre le logo horizontalement dans le conteneur */
+  margin: 0 auto;
 }
 
 img {
@@ -331,23 +330,18 @@ img {
   left: 30px;
 }
 
-.fonctionnement-card-text-1,
-.fonctionnement-card-text-2,
-.fonctionnement-card-text-3 {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  text-align: left;
-}
-
 .fonctionnement-card-text-1 {
+  font-family: "Roboto", sans-serif;
   margin-left: 12px;
 }
 
 .fonctionnement-card-text-2 {
+  font-family: "Roboto", sans-serif;
   margin-left: -3px;
 }
 
 .fonctionnement-card-text-3 {
+  font-family: "Roboto", sans-serif;
   margin-left: 5px;
 }
 

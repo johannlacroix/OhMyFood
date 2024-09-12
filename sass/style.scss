@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Shrikhand');
 
+// Variables
 $primary: green;
 $secondary: pink;
 $grey: grey;
@@ -9,11 +10,7 @@ $font-roboto: "Roboto", sans-serif;
 $dark-grey-bg: #353535;
 $gradient-purple: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 
-body {
-  padding: 0;
-  margin: 0;
-}
-
+// Mixins
 @mixin text-center {
   text-align: center;
 }
@@ -50,6 +47,13 @@ body {
   margin-bottom: 20px;
 }
 
+// Global Styles
+body {
+  padding: 0;
+  margin: 0;
+}
+
+// Components
 .header-container {
   display: flex;
   flex-direction: column;
@@ -71,8 +75,8 @@ h2 {
 
 .restaurant-name-container {
   display: flex;
-  align-items: center; /* Centre verticalement le texte et le cœur */
-  gap: 10px; /* Espace entre le texte et le cœur */
+  align-items: center;
+  gap: 10px;
 }
 
 .restaurant-name {
@@ -81,29 +85,29 @@ h2 {
   font-weight: 400;
   line-height: 40.82px;
   text-align: left;
-  margin-right: 10px; /* Espace entre le texte et le cœur */
+  margin-right: 10px;
 }
 
 .like-restaurant-container {
   display: flex;
-  align-items: center; /* Aligne verticalement les icônes du cœur */
-  justify-content: center; /* Centre horizontalement les icônes du cœur */
-  width: 24px; /* Largeur du conteneur du cœur */
-  height: 24px; /* Hauteur du conteneur du cœur */
-  cursor: pointer; /* Ajoute un curseur de pointeur pour le clic */
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 }
 
 .heart-icon {
-  width: 24px; /* Largeur des icônes du cœur */
-  height: 24px; /* Hauteur des icônes du cœur */
+  width: 24px;
+  height: 24px;
 }
 
 .white-heart {
-  z-index: 2; /* au-dessus */
+  z-index: 2;
 }
 
 .purple-heart {
-  z-index: 1; /* en-dessous */
+  z-index: 1;
 }
 
 .text {
@@ -178,24 +182,24 @@ nav {
   display: flex;
   align-items: center;
   width: 100%;
-  max-width: 1200px; /* Ajustez la largeur maximale si nécessaire */
-  margin: 0 auto; /* Centre le conteneur horizontalement */
-  position: relative; /* Pour permettre à la flèche de se positionner absolument */
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .icon-goback {
   position: absolute;
-  left: 20px; /* Ajustez la distance depuis le bord gauche */
+  left: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1; /* Assurez-vous que la flèche est au-dessus de tout autre contenu */
+  z-index: 1;
 }
 
 nav img {
-  display: block; /* Assurez-vous que l'image n'a pas d'espacement indésirable */
+  display: block;
   width: 200px;
-  margin: 0 auto; /* Centre le logo horizontalement dans le conteneur */
+  margin: 0 auto;
 }
 
 img {
@@ -277,10 +281,7 @@ img {
   background-color: #F8F9FA;
   @include box-shadow;
   padding: 10px;
-
-margin-bottom: 10px;
-
-
+  margin-bottom: 10px;
 }
 
 .plate-text {
@@ -291,18 +292,10 @@ margin-bottom: 10px;
   flex-direction: column;
 }
 
-.plate-and-price {
-
-}
-
-.plate {
-
-}
-
 .plate-name {
-font-family: $font-roboto;
-font-weight: bold;
-font-size: 16px;
+  font-family: $font-roboto;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .description-and-price {
@@ -312,13 +305,13 @@ font-size: 16px;
 }
 
 .plate-description {
-font-family: $font-roboto;
-font-size: 12px;
+  font-family: $font-roboto;
+  font-size: 12px;
 }
 
 .price {
-font-family: $font-roboto;
-font-weight: bold;
+  font-family: $font-roboto;
+  font-weight: bold;
 }
 
 .label-new {
@@ -395,23 +388,18 @@ font-weight: bold;
   left: 30px;
 }
 
-.fonctionnement-card-text-1,
-.fonctionnement-card-text-2,
-.fonctionnement-card-text-3 {
-  font-family: $font-roboto;
-  font-weight: bold;
-  text-align: left;
-}
-
 .fonctionnement-card-text-1 {
+  font-family: $font-roboto;
   margin-left: 12px;
 }
 
 .fonctionnement-card-text-2 {
+  font-family: $font-roboto;
   margin-left: -3px;
 }
 
 .fonctionnement-card-text-3 {
+  font-family: $font-roboto;
   margin-left: 5px;
 }
 
@@ -453,19 +441,16 @@ font-weight: bold;
 .footer-picto-and-text {
   display: flex;
   align-items: center;
-  // border: 1px solid red; /* Pour visualiser le conteneur */
 }
 
 .footer-picto {
   margin-right: 10px;
-  // border: 1px solid blue; /* Pour voir la taille exacte de l'icône */
 }
 
 .footer-text {
   font-family: $font-roboto;
   text-align: left;
 }
-
 
 .icon-plus-text {
   display: flex;
@@ -489,16 +474,16 @@ font-weight: bold;
   font-size: 16px;
   font-weight: 300;
   line-height: 18.75px;
-  text-align: left;  
+  text-align: left;
   margin-top: 30px;
 }
 
 .line-2 {
-width: 40px;
-height: 0px;
-top: 27px;
-gap: 0px;
-border: 3px 0px 0px 0px;
-opacity: 0px;
-border: 1.5px solid #99E2D0
+  width: 40px;
+  height: 0px;
+  top: 27px;
+  gap: 0px;
+  border: 3px 0px 0px 0px;
+  opacity: 0px;
+  border: 1.5px solid #99E2D0;
 }
