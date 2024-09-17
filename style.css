@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Shrikhand");
 body {
   padding: 0;
@@ -38,10 +39,8 @@ h2 {
   margin-right: 10px;
 }
 
-.like-restaurant-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.like-container {
+  position: relative;
   width: 24px;
   height: 24px;
   cursor: pointer;
@@ -50,14 +49,26 @@ h2 {
 .heart-icon {
   width: 24px;
   height: 24px;
+  transition: opacity 0.3s ease;
 }
 
 .white-heart {
-  z-index: 2;
+  opacity: 1;
 }
 
 .purple-heart {
-  z-index: 1;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.like-container:hover .white-heart {
+  opacity: 0;
+}
+
+.like-container:hover .purple-heart {
+  opacity: 1;
 }
 
 .text {
@@ -345,12 +356,6 @@ img {
   margin-left: 5px;
 }
 
-.like-container {
-  position: relative;
-  width: 24px;
-  height: 24px;
-}
-
 .hidden {
   display: none;
 }
@@ -367,6 +372,23 @@ img {
   gap: 10px;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.footer-picto-and-text, .footer-text {
+  cursor: pointer; /* Change le curseur au survol */
+  transition: color 0.3s ease; /* Animation douce pour l'effet au survol */
+}
+
+/* Changer la couleur du texte ou du pictogramme au survol */
+.footer-picto-and-text:hover i,
+.footer-text:hover {
+  color: #ff4081; /* Exemple : changer la couleur du texte */
+}
+
+/* Ajout d'un curseur spécial lors du survol */
+.footer-picto-and-text:hover,
+.footer-text:hover {
+  cursor: url("/assets/cursors/custom-cursor.png"), auto; /* Chemin vers ton curseur personnalisé */
 }
 
 .footer-bg p,
