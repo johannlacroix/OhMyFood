@@ -293,9 +293,8 @@ img {
   @include box-shadow;
   padding: 10px;
   margin-bottom: 10px;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center; /* Align items vertically */
+  overflow: hidden; /* Nécessaire pour cacher l'animation hors de l'élément */
+  transition: background-color 0.3s ease-in-out;
 }
 
 .restaurant-card-menu:hover .check-container {
@@ -318,15 +317,15 @@ img {
   height: 39px;
   top: 0;
   right: 0;
-  width: 8%; /* Réduire la largeur du conteneur pour moins d'espace */
-  transform: translateX(100%);
+  width: 8%; /* Réduire la largeur du conteneur */
+  transform: translateX(100%); /* Par défaut, le conteneur est hors de la carte */
   transition: transform 0.3s ease-in-out;
 }
 
 .check {
-  border-radius: 50px;;
+  border-radius: 50%;
   background-color: white;
-  color : #99E2D0;
+  color: #99E2D0;
   padding: 5px;
 }
 
@@ -353,22 +352,22 @@ img {
   font-size: 16px;
 }
 
-.description-and-price {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
 .plate-description {
   font-family: $font-roboto;
   font-size: 12px;
 }
 
+.description-and-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .price {
   font-family: $font-roboto;
   font-weight: bold;
-  transition: transform 0.3s ease-in-out;
-  margin-right: 20px; /* Réduire l'écart à droite du prix */
+  transition: transform 0.3s ease-in-out; /* Ajout de la transition pour le mouvement du prix */
+  margin-right: 20px;
 }
 
 .label-new {
