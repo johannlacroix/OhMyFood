@@ -40,9 +40,11 @@
         <div class="general-container">
             <div class="restaurant-name-container">
                 <p class="restaurant-name">La Palette Du Goût</p>
-                <div class="like-restaurant-container" onclick="toggleLike(this)">
-                    <img src="assets/Images et textes Ohmyfood/white-heart.svg" class="heart-icon white-heart">
-                    <img src="assets/Images et textes Ohmyfood/purple-heart.svg" class="heart-icon purple-heart hidden">
+                <div class="like-restaurant-container">
+                    <div class="like-container">
+                        <img src="assets/Images et textes Ohmyfood/white-heart.svg" class="heart-icon white-heart">
+                        <img src="assets/Images et textes Ohmyfood/purple-heart.svg" class="heart-icon purple-heart">
+                    </div>
                 </div>
             </div>
 
@@ -51,6 +53,10 @@
             <div class="line-2"></div>
 
             <div class="restaurant-card-menu">
+                <div class="check-container">
+                    <i class="fa fa-check check" aria-hidden="true"></i>
+                    <!-- <i class="fa fa-check check"></i> -->
+                </div>
                 <div class="plate-and-price">
                     <span class="plate-name">Fricassée d'escargots</span>
                     <div class="description-and-price">
@@ -164,7 +170,6 @@
         <span class="footer-text">Mentions légales</span>
         <span class="footer-text">Contact</span>
     </footer>
-    <script src="toggleLike.js"></script>
 </body>
 
 </html>
