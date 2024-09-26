@@ -17,7 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
 </head>
 
@@ -25,7 +25,7 @@
     <header>
         <nav>
             <div class="nav-content">
-                <div class="icon-goback">
+                <div class="icon-goback" onclick="window.location.href='./index.html'">
                     <i class="fa-solid fa-arrow-left"></i>
                 </div>
                 <img src="./assets/Images et textes Ohmyfood/images/logo/ohmyfood.png" alt="logo" />
@@ -35,7 +35,7 @@
 
     <main>
         <img class="bg-image"
-            src="./assets\Images et textes Ohmyfood\images\restaurants\jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+            src="./assets\Images et textes Ohmyfood\images\restaurants\louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
             alt="Image de fond : plat sur une table de restaurant" />
         <div class="general-container">
             <div class="restaurant-name-container">
@@ -47,107 +47,142 @@
                     </div>
                 </div>
             </div>
+            <div class="menu">
+                <div class="card-title-menu-section">ENTRÉES
+                    <div class="line-2"></div>
 
+                    <div class="restaurant-card-menu">
+                        <div class="plate-and-price">
+                            <span class="plate-name">Tartare de thon</span>
+                            <div class="description-and-price">
+                                <span class="plate-description">Assaisonné au yuzu</span>
+                                <span class="price">25€</span>
+                            </div>
+                        </div>
+                        <div class="check-container">
+                            <div class="check">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="card-title-menu-section">ENTREES</div>
-            <div class="line-2"></div>
+                    <div class="restaurant-card-menu">
+                        <div class="plate-and-price">
+                            <span class="plate-name">Bouchée de homard croustillant</span>
+                            <div class="description-and-price">
+                                <span class="plate-description">Et sa farandole de petits légumes</span>
+                                <span class="price">35€</span>
+                            </div>
+                        </div>
+                        <div class="check-container">
+                            <i class="fa fa-check check" aria-hidden="true"></i>
+                        </div>
+                    </div>
 
-            <div class="restaurant-card-menu">
-                <div class="plate-and-price">
-                    <span class="plate-name">Tartare de thon</span>
-                    <div class="description-and-price">
-                        <span class="plate-description">Assaisonné au yuzu</span>
-                        <span class="price">25€</span>
+                    <div class="restaurant-card-menu">
+                        <div class="plate-and-price">
+                            <span class="plate-name">Velouté de cèpes</span>
+                            <div class="description-and-price">
+                                <span class="plate-description">Aux truffes</span>
+                                <span class="price">20€</span>
+                            </div>
+                        </div>
+                        <div class="check-container">
+                            <i class="fa fa-check check" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-title-menu-section">PLATS
+                    <div class="line-2"></div>
+                    <div class="restaurant-card-menu">
+
+                        <div class="plate-and-price">
+                            <span class="plate-name">Poulet rôti aux herbes de Provence</span>
+                            <div class="description-and-price">
+                                <span class="plate-description">Et sa crème de truffe</span>
+                                <span class="price">40€</span>
+                            </div>
+                        </div>
+                        <div class="check-container">
+                            <i class="fa fa-check check" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card-menu">
+
+                        <div class="plate-and-price">
+                            <span class="plate-name">Langouste rôtie</span>
+                            <div class="description-and-price">
+                                <span class="plate-description">Et ses légumes de saison</span>
+                                <span class="price">35€</span>
+                            </div>
+                        </div>
+                        <div class="check-container">
+                            <i class="fa fa-check check" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card-menu">
+
+                        <div class="plate-and-price">
+                            <span class="plate-name">Côte de bœuf Angus</span>
+                            <div class="description-and-price">
+                                <span class="plate-description">Et sa purée de panais</span>
+                                <span class="price">44€</span>
+                            </div>
+                        </div>
+                        <div class="check-container">
+                            <i class="fa fa-check check" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-title-menu-section">DESSERTS
+                    <div class="line-2"></div>
+
+                    <div class="restaurant-card-menu">
+
+                        <div class="plate-and-price">
+                            <span class="plate-name">Farandole de desserts</span>
+                            <div class="description-and-price">
+                                <span class="plate-description">Du chef</span>
+                                <span class="price">18€</span>
+                            </div>
+                        </div>
+                        <div class="check-container">
+                            <i class="fa fa-check check" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card-menu">
+
+                        <div class="plate-and-price">
+                            <span class="plate-name">Crème brulée</span>
+                            <div class="description-and-price">
+                                <span class="plate-description">Revisitée</span>
+                                <span class="price">22€</span>
+                            </div>
+                        </div>
+                        <div class="check-container">
+                            <i class="fa fa-check check" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="restaurant-card-menu">
+
+                        <div class="plate-and-price">
+                            <span class="plate-name">Tiramisu</span>
+                            <div class="description-and-price">
+                                <span class="plate-description">À la noisette</span>
+                                <span class="price">23€</span>
+                            </div>
+                        </div>
+                        <div class="check-container">
+                            <i class="fa fa-check check" aria-hidden="true"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="restaurant-card-menu">
-                <div class="plate-and-price">
-                    <span class="plate-name">Bouchée de homard croustillant </span>
-                    <div class="description-and-price">
-                        <span class="plate-description">Et sa farandole de petits légumes</span>
-                        <span class="price">35€</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="restaurant-card-menu">
-                <div class="plate-and-price">
-                    <span class="plate-name">Velouté de cèpes</span>
-                    <div class="description-and-price">
-                        <span class="plate-description">Aux truffes</span>
-                        <span class="price">20€</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-title-menu-section">PLATS</div>
-            <div class="line-2"></div>
-
-            <div class="restaurant-card-menu">
-                <div class="plate-and-price">
-                    <span class="plate-name">Poulet rôti aux herbes de Provence</span>
-                    <div class="description-and-price">
-                        <span class="plate-description">Et sa crème de truffe</span>
-                        <span class="price">40€</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="restaurant-card-menu">
-                <div class="plate-and-price">
-                    <span class="plate-name">Langouste rôtie</span>
-                    <div class="description-and-price">
-                        <span class="plate-description">Et ses légumes de saison</span>
-                        <span class="price">35€</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="restaurant-card-menu">
-                <div class="plate-and-price">
-                    <span class="plate-name">Côte de bœuf Angus</span>
-                    <div class="description-and-price">
-                        <span class="plate-description">Et sa purée de panais</span>
-                        <span class="price">44€</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card-title-menu-section">DESSERTS</div>
-            <div class="line-2"></div>
-
-            <div class="restaurant-card-menu">
-                <div class="plate-and-price">
-                    <span class="plate-name">Farandole de desserts</span>
-                    <div class="description-and-price">
-                        <span class="plate-description">Du chef</span>
-                        <span class="price">18€</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="restaurant-card-menu">
-                <div class="plate-and-price">
-                    <span class="plate-name">Crème brulée</span>
-                    <div class="description-and-price">
-                        <span class="plate-description">Revisitée</span>
-                        <span class="price">22€</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="restaurant-card-menu">
-                <div class="plate-and-price">
-                    <span class="plate-name">Tiramisu</span>
-                    <div class="description-and-price">
-                        <span class="plate-description">À la noisette</span>
-                        <span class="price">23€</span>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </main>
 
