@@ -492,6 +492,41 @@ img {
   line-height: 18.75px;
   text-align: left;
   margin-top: 30px;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Animation fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Effet de décalage vers le bas */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Appliquer animation aux card-title-menu-section */
+.card-title-menu-section {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Ordre des apparitions */
+/* Entrées (premier à apparaître) */
+.card-title-menu-section:nth-of-type(1) {
+  animation-delay: 0s; /* Délai pour  */
+}
+
+/* Plats (deuxième à apparaître) */
+.card-title-menu-section:nth-of-type(2) {
+  animation-delay: 1s; /* Délai pour  */
+}
+
+/* Desserts (dernier à apparaître) */
+.card-title-menu-section:nth-of-type(3) {
+  animation-delay: 2s; /* Délai pour Plats */
 }
 
 .line-2 {
