@@ -124,6 +124,7 @@ h2 {
   font-family: $font-roboto !important;
   font-weight: 400;
   font-style: normal;
+  cursor: pointer;
 
   &-gap {
     gap: 20px;
@@ -215,6 +216,7 @@ nav img {
 img {
   display: block;
   width: 200px;
+  cursor: pointer;
 }
 
 .bg-image {
@@ -314,15 +316,12 @@ img {
 
 .check-container {
   position: absolute;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: #99E2D0;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 13px;
+  padding-top: 17px;
   padding-bottom: 10px;
   top: 0;
   right: 0;
@@ -340,15 +339,6 @@ img {
   height: 15px;
 }
 
-// /* Classe activée lors de l'apparition du check-container */
-// .show-check .price {
-//   margin-left: 5px; /* Pousse le prix à gauche */
-// }
-
-// .show-check .check-container {
-//   width: 15%; /* Ajuste la taille du check-container */
-// }
-
 .plate-text {
   display: flex;
   padding: 20px;
@@ -364,6 +354,10 @@ img {
 }
 
 .plate-description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
   font-family: $font-roboto;
   font-size: 12px;
 }
@@ -397,6 +391,7 @@ img {
 
 .btn-wide {
   width: 235px;
+  cursor: pointer;
 }
 
 .fonctionnement-card {
@@ -614,8 +609,6 @@ img {
   opacity: 0px;
   border: 1.5px solid #99E2D0;
 }
-
-// loader
 
 /* Loader covering the entire screen */
 .loader {
