@@ -35,22 +35,27 @@ $gradient-purple: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   color: $color;
 }
 
-@mixin card-styles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  background-color: #F8F9FA;
-  border-radius: 10px;
-  @include box-shadow;
-  padding: 20px;
-  margin-bottom: 20px;
-}
+// @mixin card-styles {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   gap: 10px;
+//   background-color: #F8F9FA;
+//   border-radius: 10px;
+//   @include box-shadow;
+//   padding: 20px;
+//   margin-bottom: 20px;
+// }
 
 // Global Styles
 body {
   padding: 0;
   margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
 }
 
 // Components
@@ -394,6 +399,12 @@ img {
   cursor: pointer;
 }
 
+.fonctionnement-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
 .fonctionnement-card {
   position: relative;
   display: flex;
@@ -403,8 +414,7 @@ img {
   border-radius: 10px;
   @include box-shadow;
   margin-bottom: 20px;
-  margin-right: 20px;
-  padding: 0 30px;
+  // padding: 0 30px;
 }
 
 .plate-title {
@@ -498,18 +508,6 @@ img {
 .footer-picto-and-text, .footer-text {
     cursor: pointer; /* Change le curseur au survol */
     transition: color 0.3s ease; /* Animation douce pour l'effet au survol */
-}
-
-/* Changer la couleur du texte ou du pictogramme au survol */
-.footer-picto-and-text:hover i,
-.footer-text:hover {
-    color: #ff4081; /* Exemple : changer la couleur du texte */
-}
-
-/* Ajout d'un curseur spécial lors du survol */
-.footer-picto-and-text:hover,
-.footer-text:hover {
-    cursor: url('/assets/cursors/custom-cursor.png'), auto; /* Chemin vers ton curseur personnalisé */
 }
 
 .footer-bg p,
@@ -707,4 +705,62 @@ img {
 /* Affichage du contenu principal une fois le loader disparu */
 body:not(:has(#loader)) .content {
   display: block;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  /* Styles spécifiques pour les tablettes */
+  body {
+      font-size: 18px;
+  }
+
+  .container {
+      padding: 20px;
+  }
+
+  .header {
+      display: flex;
+      justify-content: space-between;
+  }
+}
+
+.fonctionnement-section {
+  display : flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0px;
+}
+
+.fonctionnement-card {
+  width: 300px;
+  max-width: 50%;
+}
+
+.general-container {
+  padding: 100px;
+}
+
+.restaurants-container {
+  display: flex;
+  align-content: stretch;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: none;
+  // padding: 60px;
+}
+
+.card-menu {
+  border-radius: 10px;
+  background-color: #F8F9FA;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  /* margin-bottom: 20px; */
+  position: relative;
+  overflow: hidden;
+  margin: 30px;
+  width: 350px;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
 }
