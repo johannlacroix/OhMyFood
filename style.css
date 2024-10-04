@@ -648,6 +648,15 @@ body:not(:has(#loader)) .content {
   body {
     font-size: 18px;
   }
+  .location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAEAEA;
+    height: 50px;
+    gap: 17px;
+    margin: 5px 0;
+  }
   .container {
     padding: 20px;
   }
@@ -661,7 +670,7 @@ body:not(:has(#loader)) .content {
   flex-direction: row;
   justify-content: space-between;
   background-color: white;
-  padding: 0px;
+  padding: 30px;
 }
 
 .fonctionnement-card {
@@ -670,7 +679,7 @@ body:not(:has(#loader)) .content {
 }
 
 .general-container {
-  padding: 100px;
+  padding: 0px;
 }
 
 .restaurants-container {
@@ -695,6 +704,11 @@ body:not(:has(#loader)) .content {
 
 .restaurants {
   background-color: #F6F6F6;
+}
+
+.test {
+  display: flex;
+  flex-direction: row;
 }
 
 /*# sourceMappingURL=style.css.map */

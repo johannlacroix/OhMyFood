@@ -713,6 +713,16 @@ body:not(:has(#loader)) .content {
       font-size: 18px;
   }
 
+  .location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EAEAEA;
+    height: 50px;
+    gap: 17px;
+    margin: 5px 0;
+  }
+
   .container {
       padding: 20px;
   }
@@ -721,15 +731,16 @@ body:not(:has(#loader)) .content {
       display: flex;
       justify-content: space-between;
   }
-}
 
+}
 .fonctionnement-section {
   display : flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: white;
-  padding: 0px;
+  padding: 30px;
 }
+
 
 .fonctionnement-card {
   width: 300px;
@@ -737,7 +748,7 @@ body:not(:has(#loader)) .content {
 }
 
 .general-container {
-  padding: 100px;
+  padding: 0px;
 }
 
 .restaurants-container {
@@ -763,4 +774,10 @@ body:not(:has(#loader)) .content {
 
 .restaurants {
   background-color: #F6F6F6;
+}
+
+
+.test {
+  display: flex;
+  flex-direction: row;
 }
